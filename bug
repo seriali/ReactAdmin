@@ -1,0 +1,35 @@
+1.eliminate->car->edit.html
+    如下所示：在每一个说明前面加上span
+    <span style="color: red">*</span>过户后业户
+2.用户管理的添加页面
+    同样加span标签
+    <span style="color: red">*</span>登录名称
+3.noSubsidyCar.html
+    第13行 无补贴标准 改为无补贴车辆
+4.index-1.html
+    第75行的style替换为style="height: 74px;margin-left: 456px;width: 1000px;text-align: right;"
+5.main.html
+    第77行h2标签的style加上width:226px
+6.login.html
+    第44行 style里面添加color: rgba(66,140,255,1)
+    第57行 记住我修改为<span style="color: black">&nbsp;记住我</span>
+7.noSubsidyCar.html
+    第10行style的margin-left修改为-171px
+8.eliminate->car.html
+    第10行style的margin-left修改为-158px
+9.subsidyApply->edit.html:单位车主办理的表格进行了修改
+10.attachment.html:上传文件必须是jpg,png,bmp gif
+    第13行input添加属性accept=".jpg,.png,.bmp,.gif"
+11.subsidyApply:edit.html
+    第118行style添加margin-left: 25px
+    第164行添加style="margin-left: 23px"
+12.ry-ui.css
+    119行right改为31px
+   style.css
+   添加
+   #czxz-error{
+         right: 44px;
+     }
+     #blry-error{
+         right: 75px;
+     }
