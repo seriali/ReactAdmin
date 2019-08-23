@@ -1,4 +1,4 @@
-export default function formatDateTime(inputTime) {
+export function formatDateTime(inputTime) {
     let date = new Date(inputTime);
     let y = date.getFullYear();
     let m = date.getMonth() + 1;

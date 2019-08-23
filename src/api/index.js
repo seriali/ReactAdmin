@@ -14,7 +14,7 @@ export function requireLogin(username,password) {
 }*/
 export const  reqLogin= (username,password) => ajax(BASE_URL+'/login',{username,password},"POST");
 //添加用户
-export const reqAddUser = (user) => ajax(BASE_URL+'/manage/user/add',user,"POST")
+export const reqAddUser = (user) => ajax(BASE_URL+'/manage/user/add',user,"POST");
 /*
 jsonp请求的接口请求函数
  */
@@ -34,4 +34,9 @@ export const reqWeather = (city) => {
         })
     })
 };
-//reqWeather('北京')
+//获取一级/二级分类的列表
+export const reqCategorys = (parentId) => ajax(BASE_URL + '/manage/category/list',{parentId});
+//添加分类
+export const reqAddCategory = (categoryName,parentId) => ajax(BASE_URL + '/manage/category/add',{categoryName,parentId},'POST');
+//更新分类
+export const reqUpdateCategory = ({categoryName,parentId}) => ajax(BASE_URL + '/manage/category/update',{categoryName,parentId},"POST");
